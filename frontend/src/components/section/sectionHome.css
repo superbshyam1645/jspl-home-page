@@ -1,0 +1,183 @@
+.SectionHome {
+  width: 97%;
+  height: 100%;
+}
+
+.SectionHome {
+  padding: 20px;
+  text-align: center;
+}
+
+.our-services h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  position: relative;
+  width: 1440px;
+  height: 400px;
+  margin: 0 15px;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  position: relative;
+  margin-top: -60px;
+  color: #cadcfc;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.carousel-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: #0056b3;
+}
+
+.carousel-button:focus {
+  outline: none;
+}
+
+.carousel-button.prev {
+  position: absolute;
+  left: 50px;
+  z-index: 1;
+  color: #cadcfc;
+  background-color: transparent;
+}
+
+.carousel-button.next {
+  position: absolute;
+  right: 100px;
+  z-index: 1;
+  color: #cadcfc;
+  background-color: transparent;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed to position the dots */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 3; /* Ensures dots are above the image */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cadcfc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #00246b;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-boxes {
+  width: 97%;
+  display: flex;
+  gap: 3%;
+  margin-left: 1.8%;
+  height: 400px;
+}
+
+.service-item {
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+  background: #00246b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item-img > img {
+  width: 100%;
+  height: 150px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2),
+    /* Top shadow */ 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-item-text {
+  color: #cadcfc;
+  font-weight: 900;
+}
+
+.servic-item-desc {
+  color: #cadcfc;
+  margin-top: 2%;
+  letter-spacing: 0.2rem;
+}
+.service-item-button {
+  margin-top: 10%;
+  width: 100px;
+  background: #e10202;
+  height: 20px;
+  align-items: center;
+  display: flex;
+  padding: 2%;
+  color: white;
+  border-radius: 10px;
+}
+
+.service-item-button:hover {
+  background: white;
+  color: #e10202;
+  border: 1px solid #e10202;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.loading-image {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

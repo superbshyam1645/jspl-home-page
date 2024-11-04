@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #cadcfc;
+  background-color: #00246b;
+  color: #cadcfc;
+  padding: 1%;
+  border-radius: 10px;
+  width: 97%;
 }
 
 .header-main {
@@ -13,6 +15,38 @@
 }
 
 .logo {
+  width: 60px;
+  height: 32px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  margin-top: 1%;
+  top: 60px;
+  left: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  background-color: #00246b;
+  opacity: 0.9;
+  color: #cadcfc;
+  border: 1px solid #cadcfc;
+  border-radius: 10px;
+  width: 14%;
+  padding: 1%;
+  z-index: 1;
+}
+
+.dropdown-item:hover,
+.header-item:hover,
+.header-login:hover {
+  cursor: pointer;
+  color: #d9d9d9;
+}
+
+.login-icon {
   width: 60px;
   height: 32px;
 }
