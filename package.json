@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend for JSPL Group of Companies",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon start",
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jspl-home-page/backend.git"
+  },
+  "author": "Shyam Jee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jspl-home-page/backend/issues"
+  },
+  "homepage": "https://github.com/jspl-home-page/backend#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
