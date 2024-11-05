@@ -1,1 +1,0 @@
-# jspl-home-page
